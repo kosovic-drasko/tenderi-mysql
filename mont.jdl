@@ -1,0 +1,94 @@
+entity HvalePonude {
+  sifraPostupka Integer
+  brojPartije Integer
+  inn String
+  farmaceutskiOblikLijeka String
+  pakovanje String
+  trazenaKolicina Integer
+  procijenjenaVrijednost Double
+}
+entity Ponude {
+  sifraPostupka Integer required
+  sifraPonude Integer required
+  brojPartije Integer required
+  nazivProizvodjaca String
+  zasticeniNaziv String
+  ponudjenaVrijednost Double required
+  rokIsporuke Integer
+  jedinicnaCijena Double
+  selected Boolean
+  sifraPonudjaca Integer
+}
+entity Ponudjaci {
+  nazivPonudjaca String
+  odgovornoLice String
+  adresaPonudjaca String
+  bankaRacun String
+}
+entity Postupci {
+  sifraPostupka Integer required
+  brojTendera String
+  opisPostupka String required
+  vrstaPostupka String required
+  datumObjave LocalDate
+  datumOtvaranja LocalDate
+  kriterijumCijena Integer required
+  drugiKriterijum Integer required
+}
+entity Prvorangirani (view_prvorangirani) {
+  sifraPostupka Integer
+  nazivPonudjaca String
+  sifraPonude Integer
+  brojPartije Integer
+  atc String
+  trazenaKolicina Integer
+  procijenjenaVrijednost Double
+  nazivProizvodjaca String
+  zasticeniNaziv String
+  jedinicnaCijena Double
+  ponudjenaVrijednost Double
+  rokIsporuke Integer
+  vrstaPostupka String
+  bodCijena Double
+  bodRok Double
+  bodUkupno Double
+}
+entity Specifikacije {
+  sifraPostupka Integer required
+  brojPartije Integer required
+  atc String
+  inn String
+  farmaceutskiOblikLijeka String
+  jacinaLijeka String
+  trazenaKolicina Integer
+  pakovanje String
+  jedinicaMjere String
+  procijenjenaVrijednost Double required
+}
+entity TenderiHome{}
+entity Vrednovanje (view_vrednovanje) {
+  sifraPostupka Integer
+  sifraPonude Integer
+  brojPartije Integer
+  nazivProizvodjaca String
+  zasticeniNaziv String
+  ponudjenaVrijednost Double
+  rokIsporuke Integer
+  jedinicnaCijena Double
+  nazivPonudjaca String
+  atc String
+  trazenaKolicina Integer
+  procijenjenaVrijednost Double
+  vrstaPostupka String
+  bodCijena Double
+  bodRok Double
+  bodUkupno Double
+}
+relationship OneToMany {
+  Ponudjaci{ponude} to Ponude{ponudjaci}
+}
+
+paginate HvalePonude, Ponude, Ponudjaci, Postupci, Prvorangirani, Specifikacije, Vrednovanje with pagination
+readOnly HvalePonude, Prvorangirani, TenderiHome, Vrednovanje
+service Ponude, Ponudjaci, Postupci, Prvorangirani, Specifikacije, Vrednovanje with serviceClass
+filter Ponude, Ponudjaci, Postupci, Prvorangirani, Specifikacije, Vrednovanje

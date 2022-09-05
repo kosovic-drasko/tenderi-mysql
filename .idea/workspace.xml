@@ -4,11 +4,239 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e0c2aaf-caab-4d20-85bb-5f7253c78ddc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6e0c2aaf-caab-4d20-85bb-5f7253c78ddc" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/.jhipster/HvalePonude.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jhipster/Ponude.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jhipster/Ponudjaci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jhipster/Postupci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jhipster/Prvorangirani.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jhipster/Specifikacije.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jhipster/TenderiHome.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jhipster/Vrednovanje.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mont.jdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/domain/Ponude.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/domain/Ponudjaci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/domain/Postupci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/domain/Prvorangirani.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/domain/Specifikacije.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/domain/TenderiHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/domain/Vrednovanje.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/repository/PonudeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/repository/PonudjaciRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/repository/PostupciRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/repository/PrvorangiraniRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/repository/SpecifikacijeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/repository/TenderiHomeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/repository/VrednovanjeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/PonudeQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/PonudeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/PonudjaciQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/PonudjaciService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/PostupciQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/PostupciService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/PrvorangiraniQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/PrvorangiraniService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/SpecifikacijeQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/SpecifikacijeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/VrednovanjeQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/VrednovanjeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/criteria/PonudeCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/criteria/PonudjaciCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/criteria/PostupciCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/criteria/PrvorangiraniCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/criteria/SpecifikacijeCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/criteria/VrednovanjeCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/PonudeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/PonudjaciResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/PostupciResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/PrvorangiraniResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/SpecifikacijeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/TenderiHomeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/VrednovanjeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220813064046_added_entity_Ponude.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220813064046_added_entity_constraints_Ponude.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220813064047_added_entity_Ponudjaci.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220813064048_added_entity_Postupci.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220813064049_added_entity_Specifikacije.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220813064050_added_entity_TenderiHome.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/functions_trigger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/view-maximalni_bod.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/view-prvorangirani.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/view-vrednovanje.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/ponude.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/ponudjaci.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/postupci.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/specifikacije.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/tenderi_home.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/view_prvorangirani.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/view_vrednovanje.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/detail/hvale-ponude-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/detail/hvale-ponude-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/detail/hvale-ponude-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/hvale-ponude.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/hvale-ponude.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/list/hvale-ponude.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/list/hvale-ponude.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/list/hvale-ponude.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/route/hvale-ponude-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/route/hvale-ponude-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/route/hvale-ponude-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/service/hvale-ponude.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/service/hvale-ponude.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/delete/ponude-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/delete/ponude-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/delete/ponude-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/detail/ponude-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/detail/ponude-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/detail/ponude-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/ponude.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/ponude.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/route/ponude-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/route/ponude-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/route/ponude-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/service/ponude.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/service/ponude.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/delete/ponudjaci-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/delete/ponudjaci-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/delete/ponudjaci-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/detail/ponudjaci-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/detail/ponudjaci-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/detail/ponudjaci-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/ponudjaci.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/ponudjaci.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/route/ponudjaci-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/route/ponudjaci-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/route/ponudjaci-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/service/ponudjaci.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/service/ponudjaci.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/delete/postupci-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/delete/postupci-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/delete/postupci-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/detail/postupci-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/detail/postupci-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/detail/postupci-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/postupci.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/postupci.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/route/postupci-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/route/postupci-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/route/postupci-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/service/postupci.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/service/postupci.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/detail/prvorangirani-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/detail/prvorangirani-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/detail/prvorangirani-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/list/prvorangirani.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/list/prvorangirani.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/list/prvorangirani.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/prvorangirani.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/prvorangirani.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/route/prvorangirani-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/route/prvorangirani-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/route/prvorangirani-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/service/prvorangirani.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/service/prvorangirani.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/delete/specifikacije-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/delete/specifikacije-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/delete/specifikacije-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/detail/specifikacije-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/detail/specifikacije-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/detail/specifikacije-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/list/specifikacije.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/list/specifikacije.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/list/specifikacije.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/route/specifikacije-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/route/specifikacije-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/route/specifikacije-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/service/specifikacije.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/service/specifikacije.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/specifikacije.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/specifikacije.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/update/specifikacije-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/update/specifikacije-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/update/specifikacije-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/detail/tenderi-home-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/detail/tenderi-home-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/detail/tenderi-home-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/list/tenderi-home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/list/tenderi-home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/list/tenderi-home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/route/tenderi-home-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/route/tenderi-home-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/route/tenderi-home-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/service/tenderi-home.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/service/tenderi-home.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/tenderi-home.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/tenderi-home.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/detail/vrednovanje-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/detail/vrednovanje-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/detail/vrednovanje-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/list/vrednovanje.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/list/vrednovanje.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/list/vrednovanje.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/route/vrednovanje-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/route/vrednovanje-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/route/vrednovanje-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/service/vrednovanje.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/service/vrednovanje.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/vrednovanje.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/vrednovanje.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/hvalePonude.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/ponude.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/ponudjaci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/postupci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/prvorangirani.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/specifikacije.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/tenderiHome.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/vrednovanje.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/hvalePonude.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/ponude.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/ponudjaci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/postupci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/prvorangirani.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/specifikacije.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/tenderiHome.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/vrednovanje.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/domain/PonudeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/domain/PonudjaciTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/domain/PostupciTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/domain/PrvorangiraniTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/domain/SpecifikacijeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/domain/TenderiHomeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/domain/VrednovanjeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/web/rest/PonudeResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/web/rest/PonudjaciResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/web/rest/PostupciResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/web/rest/PrvorangiraniResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/web/rest/SpecifikacijeResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/web/rest/TenderiHomeResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/web/rest/VrednovanjeResourceIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yo-rc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.yo-rc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tender/config/CacheConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/config/CacheConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/entity-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/entity-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/global.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +258,24 @@
     </option>
   </component>
   <component name="ProjectId" id="2EKy55YP413WOmcZnkYX4g8FYXx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/pc/IdeaProjects/tenderi-mysql/src/main/resources/config",
     "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "cd2e6cfb8c6e0413df5978939a9dcb25"
   },
@@ -49,6 +285,13 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\resources\config" />
+      <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\resources\config\liquibase" />
+      <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.TenderiApp">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
@@ -93,8 +336,17 @@
       <option name="presentableId" value="Default" />
       <updated>1662358392893</updated>
       <workItem from="1662358395168" duration="704000" />
-      <workItem from="1662359875331" duration="1810000" />
+      <workItem from="1662359875331" duration="2318000" />
+      <workItem from="1662401337525" duration="3297000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1662362576920</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662362576920</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,5 +362,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>
