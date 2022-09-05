@@ -21,7 +21,7 @@
     "enableTranslation": true,
     "entities": ["Ponude", "HvalePonude", "Ponudjaci", "Postupci", "Specifikacije", "TenderiHome", "Vrednovanje", "Prvorangirani"],
     "entitySuffix": "",
-    "herokuAppName": "montefarm-tender",
+    "herokuAppName": "montefarm-tenderi",
     "herokuDeployType": "git",
     "herokuJavaVersion": "18",
     "jhiPrefix": "jhi",
