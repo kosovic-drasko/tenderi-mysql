@@ -5,73 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e0c2aaf-caab-4d20-85bb-5f7253c78ddc" name="Changes" comment="baza">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login/login.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login/login.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login/login.route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login/login.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/content/images/icons8-microsoft-excel-48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/content/images/icons8-pdf-48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/delete/ponude-delete-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/delete/ponude-delete-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/detail/ponude-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/detail/ponude-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/detail/ponude-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/detail/ponude-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/ponude.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/ponude.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/ponude.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/ponude.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/route/ponude-routing-resolve.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/service/ponude.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/service/ponude.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/service/ponude.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/delete/ponudjaci-delete-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/delete/ponudjaci-delete-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/detail/ponudjaci-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/detail/ponudjaci-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/ponudjaci.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/ponudjaci.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/home/home.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login/login.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/global.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/hvalePonude.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/hvalePonude.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/ponude.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/ponude.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/ponudjaci.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/ponudjaci.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/postupci.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/postupci.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/prvorangirani.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/prvorangirani.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/specifikacije.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/specifikacije.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/tenderiHome.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/tenderiHome.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/en/vrednovanje.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/vrednovanje.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/global.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/home.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/hvalePonude.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/hvalePonude.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/ponude.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/ponude.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/ponudjaci.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/ponudjaci.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/postupci.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/postupci.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/prvorangirani.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/prvorangirani.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/specifikacije.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/specifikacije.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/tenderiHome.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/tenderiHome.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/i18n/sr/vrednovanje.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/vrednovanje.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/delete/postupci-delete-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/delete/postupci-delete-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/detail/postupci-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/detail/postupci-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/postupci.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/postupci.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +87,7 @@
       <recent name="tender.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+  <component name="RunManager" selected="Spring Boot.TenderiApp">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -221,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662442930429</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="baza">
+      <created>1662465317273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662465317273</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
