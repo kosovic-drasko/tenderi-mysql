@@ -39,14 +39,14 @@ public interface PonudeRepository extends JpaRepository<Ponude, Long>, JpaSpecif
 
     @Query(
         value = "SELECT * FROM (SELECT \n" +
-        "  public.ponude.*,\n" +
-        "  public.ponudjaci.naziv_ponudjaca,\n" +
+        "  ponude.*,\n" +
+        "  ponudjaci.naziv_ponudjaca,\n" +
         "  ROW_NUMBER() over(partition BY ponude.sifra_ponude ORDER BY \n" +
         "ponude.id DESC)rn\n" +
         "FROM\n" +
-        "  public.ponude\n" +
+        "  ponude\n" +
         "  \n" +
-        "  INNER JOIN public.ponudjaci ON (public.ponude.ponudjaci_id = public.ponudjaci.id\n" +
+        "  INNER JOIN ponudjaci ON (ponude.ponudjaci_id = ponudjaci.id\n" +
         " )WHERE ponude.sifra_postupka=:sifra)a\n" +
         "WHERE rn=1",
         nativeQuery = true
