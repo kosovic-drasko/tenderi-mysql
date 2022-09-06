@@ -5,10 +5,14 @@ import { SpecifikacijeDetailComponent } from './detail/specifikacije-detail.comp
 import { SpecifikacijeUpdateComponent } from './update/specifikacije-update.component';
 import { SpecifikacijeDeleteDialogComponent } from './delete/specifikacije-delete-dialog.component';
 import { SpecifikacijeRoutingModule } from './route/specifikacije-routing.module';
+import { MatSortModule } from '@angular/material/sort';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { JhMaterialModule } from '../../shared/jh-material.module';
 
 @NgModule({
-  imports: [SharedModule, SpecifikacijeRoutingModule],
+  imports: [SharedModule, SpecifikacijeRoutingModule, MatSortModule, MatSidenavModule, JhMaterialModule],
   declarations: [SpecifikacijeComponent, SpecifikacijeDetailComponent, SpecifikacijeUpdateComponent, SpecifikacijeDeleteDialogComponent],
   entryComponents: [SpecifikacijeDeleteDialogComponent],
+  exports: [SpecifikacijeComponent],
 })
 export class SpecifikacijeModule {}
