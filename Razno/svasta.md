@@ -10,3 +10,5 @@ font jasper pdf DejaVu Sans
 npm i mat-table-exporter
 java.time.LocalDate
 providers: [DecimalPipe],
+
+npm rm browser-sync && npm install browser-sync
