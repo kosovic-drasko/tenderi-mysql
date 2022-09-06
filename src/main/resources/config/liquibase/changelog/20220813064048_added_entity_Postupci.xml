@@ -11,9 +11,10 @@
     -->
     <changeSet id="20220813064048-1" author="jhipster">
         <createTable tableName="postupci">
-            <column name="id" type="bigint">
+            <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
+
             <column name="sifra_postupka" type="integer">
                 <constraints nullable="false" />
             </column>
