@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpResponse } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
+import { observable, Observable } from 'rxjs';
 
 import { isPresent } from 'app/core/util/operators';
 import { ApplicationConfigService } from 'app/core/config/application-config.service';
@@ -13,6 +13,10 @@ export type EntityArrayResponseType = HttpResponse<IPonude[]>;
 @Injectable({ providedIn: 'root' })
 export class PonudeService {
   protected resourceUrl = this.applicationConfigService.getEndpointFor('api/ponudes');
+  protected resourceUrlPonudePonudjaci = this.applicationConfigService.getEndpointFor('api/ponude-ponudjaci');
+  protected resourceUrlPonudePostupci = this.applicationConfigService.getEndpointFor('api/ponude-postupci');
+  protected resourceUrlPostupciSifra = this.applicationConfigService.getEndpointFor('api/sifra-postupka');
+  public resourceUrlExcelUpload = SERVER_API_URL + 'api/upload';
 
   constructor(protected http: HttpClient, protected applicationConfigService: ApplicationConfigService) {}
 
@@ -30,6 +34,17 @@ export class PonudeService {
 
   find(id: number): Observable<EntityResponseType> {
     return this.http.get<IPonude>(`${this.resourceUrl}/${id}`, { observe: 'response' });
+  }
+  ponudePonudjaci(sifraPostupka: number): Observable<IPonude> {
+    return this.http.get<IPonude>(`${this.resourceUrlPonudePonudjaci}/${sifraPostupka}`);
+  }
+
+  ponudePostupci(sifraPostupka: number | undefined, sifraPonude: null | undefined): Observable<EntityArrayResponseType> {
+    return this.http.get<IPonude[]>(`${this.resourceUrlPonudePostupci}/${sifraPostupka}/${sifraPonude}`, { observe: 'response' });
+  }
+
+  ponudePostupciSifra(sifraPostupka: number | undefined): Observable<EntityArrayResponseType> {
+    return this.http.get<IPonude[]>(`${this.resourceUrlPostupciSifra}/${sifraPostupka}`, { observe: 'response' });
   }
 
   query(req?: any): Observable<EntityArrayResponseType> {
@@ -56,5 +71,14 @@ export class PonudeService {
       return [...ponudesToAdd, ...ponudeCollection];
     }
     return ponudeCollection;
+  }
+
+  UploadExcel(formData: FormData): any {
+    const headers = new HttpHeaders();
+
+    headers.append('Content-Type', 'multipart/form-data');
+    headers.append('Accept', 'application/json');
+
+    return this.http.post(this.resourceUrlExcelUpload, formData, { headers });
   }
 }

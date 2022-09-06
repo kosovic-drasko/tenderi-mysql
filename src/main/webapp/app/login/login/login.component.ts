@@ -1,19 +1,18 @@
 import { Component, ViewChild, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+
 import { LoginService } from 'app/login/login.service';
 import { AccountService } from 'app/core/auth/account.service';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'jhi-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.scss'],
 })
 export class LoginComponent implements OnInit, AfterViewInit {
   @ViewChild('username', { static: false })
   username!: ElementRef;
-  hide = true;
+
   authenticationError = false;
 
   loginForm = this.fb.group({
@@ -26,8 +25,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
     private accountService: AccountService,
     private loginService: LoginService,
     private router: Router,
-    private fb: FormBuilder,
-    protected modalService: NgbModal
+    private fb: FormBuilder
   ) {}
 
   ngOnInit(): void {
@@ -41,9 +39,6 @@ export class LoginComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.username.nativeElement.focus();
-  }
-  close(): any {
-    this.modalService.dismissAll();
   }
 
   login(): void {
@@ -59,7 +54,6 @@ export class LoginComponent implements OnInit, AfterViewInit {
           if (!this.router.getCurrentNavigation()) {
             // There were no routing during login (eg from navigationToStoredUrl)
             this.router.navigate(['']);
-            this.close();
           }
         },
         error: () => (this.authenticationError = true),

@@ -1,14 +1,13 @@
 {
   "global": {
-    "title": "Tenderi",
+    "title": "Tender",
     "browsehappy": "Koristite <strong>zastareli</strong> pretraživač. Molimo vas <a href=\"http://browsehappy.com/?locale=en\">nadogradite pretraživač</a> kako biste poboljšali Vaše iskustvo.",
     "menu": {
       "home": "Početna stranica",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
-        "main": "Entiteti",
+        "main": "Unosi",
         "ponude": "Ponude",
-        "hvalePonude": "Hvale Ponude",
         "ponudjaci": "Ponudjaci",
         "postupci": "Postupci",
         "specifikacije": "Specifikacije",
