@@ -27,7 +27,7 @@ import tender.service.criteria.PostupciCriteria;
 import tender.web.rest.errors.BadRequestAlertException;
 
 /**
- * REST controller for managing {@link tender.domain.Postupci}.
+ * REST controller for managing {@link Postupci}.
  */
 @RestController
 @RequestMapping("/api")

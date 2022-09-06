@@ -27,7 +27,7 @@ import tender.service.criteria.PonudeCriteria;
 import tender.web.rest.errors.BadRequestAlertException;
 
 /**
- * REST controller for managing {@link tender.domain.Ponude}.
+ * REST controller for managing {@link Ponude}.
  */
 @RestController
 @RequestMapping("/api")
@@ -182,6 +182,24 @@ public class PonudeResource {
     public ResponseEntity<Ponude> getPonude(@PathVariable Long id) {
         log.debug("REST request to get Ponude : {}", id);
         Optional<Ponude> ponude = ponudeService.findOne(id);
+        return ResponseUtil.wrapOrNotFound(ponude);
+    }
+
+    @GetMapping("/sifra-postupka/{sifraPostupka}")
+    public ResponseEntity<?> getPonudeSifraPostupka(@PathVariable Integer sifraPostupka) {
+        Optional<?> ponude = Optional.ofNullable(ponudeRepository.findBySifraPostupka(sifraPostupka));
+        return ResponseUtil.wrapOrNotFound(ponude);
+    }
+
+    @GetMapping("/ponude-ponudjaci/{sifra}")
+    public ResponseEntity<?> getPonudePonudjaci(@PathVariable Integer sifra) {
+        Optional<? extends List<?>> ponude = Optional.ofNullable(ponudeRepository.findBySifraPostupkaPonudjaci(sifra));
+        return ResponseUtil.wrapOrNotFound(ponude);
+    }
+
+    @GetMapping("/ponude-postupci/{sifraPostupka}/{sifraPonude}")
+    public ResponseEntity<?> getPonudePonudjaci(@PathVariable Integer sifraPostupka, @PathVariable Integer sifraPonude) {
+        Optional<? extends List<?>> ponude = Optional.ofNullable(ponudeRepository.findPonudaPostupak(sifraPostupka, sifraPonude));
         return ResponseUtil.wrapOrNotFound(ponude);
     }
 

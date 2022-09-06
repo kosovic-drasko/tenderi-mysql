@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e0c2aaf-caab-4d20-85bb-5f7253c78ddc" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/utils/ExcelUtilsPonude.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/ExcelUtilsSpecifikacije.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tender/repository/PonudeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/repository/PonudeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tender/repository/SpecifikacijeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/repository/SpecifikacijeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tender/service/ExcelFileServicesPonude.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tender/service/ExcelFileServicesSpecifikacije.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tender/web/rest/PonudeResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/PonudeResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tender/web/rest/PonudjaciResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/PonudjaciResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tender/web/rest/PostupciResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/PostupciResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tender/web/rest/PrvorangiraniResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/PrvorangiraniResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/pc/IdeaProjects/tenderi-mysql",
+    "last_opened_file_path": "C:/Users/pc/IdeaProjects/tenderi-mysql/src/main/java/tender/web/rest",
     "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "cd2e6cfb8c6e0413df5978939a9dcb25",
     "ts.external.directory.path": "C:\\Users\\pc\\IdeaProjects\\tenderi-mysql\\node_modules\\typescript\\lib"
@@ -64,13 +61,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\java\tender\web\rest" />
+      <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\java\tender\service" />
       <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql" />
       <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\java\tender" />
-      <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\java\tender\service" />
       <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\webapp\app" />
-      <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\webapp\app\shared" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tender.web.rest" />
       <recent name="tender.repository" />
     </key>
   </component>
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662407212175</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init">
+      <created>1662442577750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662442577750</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

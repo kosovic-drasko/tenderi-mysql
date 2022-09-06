@@ -25,7 +25,7 @@ import tender.service.criteria.PonudjaciCriteria;
 import tender.web.rest.errors.BadRequestAlertException;
 
 /**
- * REST controller for managing {@link tender.domain.Ponudjaci}.
+ * REST controller for managing {@link Ponudjaci}.
  */
 @RestController
 @RequestMapping("/api")
