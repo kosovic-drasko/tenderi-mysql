@@ -5,8 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e0c2aaf-caab-4d20-85bb-5f7253c78ddc" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/.jhipster/Proba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/domain/Proba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/repository/ProbaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/ProbaQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/ProbaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/service/criteria/ProbaCriteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/ProbaResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/changelog/20220906171012_added_entity_Proba.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/fake-data/proba.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/list/hvale-ponude.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/hvale-ponude/service/hvale-ponude.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/list/ponude.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/route/ponude-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/service/ponude.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/update/ponude-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/list/ponudjaci.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponudjaci/update/ponudjaci-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/list/postupci.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/postupci/update/postupci-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/delete/proba-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/delete/proba-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/delete/proba-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/detail/proba-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/detail/proba-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/detail/proba-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/list/proba.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/list/proba.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/list/proba.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/proba.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/proba.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/route/proba-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/route/proba-routing-resolve.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/route/proba-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/service/proba.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/service/proba.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/update/proba-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/update/proba-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/proba/update/proba-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/prvorangirani/list/prvorangirani.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/list/specifikacije.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/specifikacije/service/specifikacije.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/list/tenderi-home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/tenderi-home/route/tenderi-home-routing-resolve.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/vrednovanje/list/vrednovanje.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/en/proba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/i18n/sr/proba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/domain/ProbaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tender/web/rest/ProbaResourceIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Razno/svasta.md" beforeDir="false" afterPath="$PROJECT_DIR$/Razno/svasta.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/entity-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/entity-routing.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,0 +1,20 @@
+{
+  "changelogDate": "20220906171012",
+  "dto": "no",
+  "fields": [
+    {
+      "fieldName": "broj",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "ime",
+      "fieldType": "String"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Proba",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
