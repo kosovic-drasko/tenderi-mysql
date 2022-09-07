@@ -1,15 +1,16 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav mode="side">
     <div>
-      <mat-form-field>
-        <input matInput [(ngModel)]="sifraPonude" matInput placeholder="Sifra Ponude" (keyup)="nadjiPoSifriPonude()" />
-        <button *ngIf="sifraPonude" matSuffix mat-icon-button aria-label="Clear" (click)="sifraPonudeNull()">
-          <mat-icon>close</mat-icon>
-        </button>
-      </mat-form-field>
+      <!--      <mat-form-field>-->
+      <!--        <input matInput [(ngModel)]="sifraPonude" matInput placeholder="Sifra Ponude" (keyup)="nadjiPoSifriPonude()" />-->
+      <!--        <button *ngIf="sifraPonude" matSuffix mat-icon-button aria-label="Clear" (click)="sifraPonudeNull()">-->
+      <!--          <mat-icon>close</mat-icon>-->
+      <!--        </button>-->
+      <!--      </mat-form-field>-->
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
+    <mat-button-toggle *ngIf="!postupak" class="nadji" (click)="sidenav.toggle()"><mat-icon>search</mat-icon></mat-button-toggle>
     <div>
       <div *ngIf="hvalePonudes?.body?.length != 0">
         <mat-button-toggle class="nadji" (click)="sidenav.toggle()"><mat-icon>search</mat-icon></mat-button-toggle>
@@ -25,7 +26,6 @@
       <div class="alert alert-warning" id="no-result" *ngIf="hvalePonudes?.body?.length === 0">
         <span>Nema zapisa Nedostajucih ponuda</span>
       </div>
-
       <table
         mat-table
         id="ExampleTable"
