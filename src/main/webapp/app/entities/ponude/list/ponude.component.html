@@ -1,6 +1,9 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav mode="side">
-    <mat-form-field *ngIf="!postupak">
+    <!--    <mat-button-toggle *ngIf="!postupak" class="nadji" (click)="sidenav.toggle()">-->
+    <!--      <mat-icon>search</mat-icon>-->
+    <!--    </mat-button-toggle>-->
+    <mat-form-field>
       <input matInput [(ngModel)]="brPonude" placeholder="Sifra Ponude" (keyup)="nadji()" />
       <button *ngIf="brPonude" matSuffix mat-icon-button aria-label="Clear" (click)="ponisti()">
         <mat-icon>close</mat-icon>
@@ -11,7 +14,9 @@
     <div id="page-heading" data-cy="SpecifikacijeHeading">
       <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
         <input hidden #fileInput type="file" id="file" />
-        <mat-button-toggle *ngIf="!postupak" class="nadji" (click)="sidenav.toggle()"><mat-icon>search</mat-icon></mat-button-toggle>
+        <mat-button-toggle class="nadji" (click)="sidenav.toggle()">
+          <mat-icon>search</mat-icon>
+        </mat-button-toggle>
         <div></div>
         <mat-button-toggle *jhiHasAnyAuthority="'ROLE_ADMIN'" (click)="add()" matTooltip="Dodaj novu ponudu">Dodaj </mat-button-toggle>
         <mat-button-toggle *jhiHasAnyAuthority="'ROLE_ADMIN'" matTooltip="Napravi formu za unos Excel" (click)="obrazacExcel()"
@@ -23,7 +28,7 @@
         <mat-button-toggle *jhiHasAnyAuthority="'ROLE_ADMIN'" matTooltip="Unesi Excel fajl" (click)="uploadFile()"
           >Dodaj Fajl
         </mat-button-toggle>
-        <mat-button-toggle *ngIf="postupak" matTooltip="Ponisti" (click)="ponisti()">Ponisti </mat-button-toggle>
+        <mat-button-toggle *ngIf="postupak" matTooltip="Ponisti" (click)="ponisti()">Ponisti</mat-button-toggle>
         <mat-button-toggle *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_USER']" matTooltip=" Excel fajl" (click)="obrazacExcelPostupak()">
           <img src="../../../../content/images/icons8-microsoft-excel-48.png" alt="" />
         </mat-button-toggle>
@@ -174,7 +179,7 @@
           <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
         </table>
 
-        <mat-paginator class="mat-paginator-sticky" [pageSizeOptions]="[20, 30, 50, 100]" showFirstLastButtons> </mat-paginator>
+        <mat-paginator class="mat-paginator-sticky" [pageSizeOptions]="[20, 30, 50, 100]" showFirstLastButtons></mat-paginator>
       </div>
     </div>
   </mat-sidenav-content>
