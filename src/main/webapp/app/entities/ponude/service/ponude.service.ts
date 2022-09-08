@@ -39,13 +39,13 @@ export class PonudeService {
     return this.http.get<IPonude>(`${this.resourceUrlPonudePonudjaci}/${sifraPostupka}`);
   }
 
-  ponudePostupci(sifraPostupka: number | undefined, sifraPonude: null | undefined): Observable<EntityArrayResponseType> {
-    return this.http.get<IPonude[]>(`${this.resourceUrlPonudePostupci}/${sifraPostupka}/${sifraPonude}`, { observe: 'response' });
-  }
-
-  ponudePostupciSifra(sifraPostupka: number | undefined): Observable<EntityArrayResponseType> {
-    return this.http.get<IPonude[]>(`${this.resourceUrlPostupciSifra}/${sifraPostupka}`, { observe: 'response' });
-  }
+  // ponudePostupci(sifraPostupka: number | undefined, sifraPonude: null | undefined): Observable<EntityArrayResponseType> {
+  //   return this.http.get<IPonude[]>(`${this.resourceUrlPonudePostupci}/${sifraPostupka}/${sifraPonude}`, { observe: 'response' });
+  // }
+  //
+  // ponudePostupciSifra(sifraPostupka: number | undefined): Observable<EntityArrayResponseType> {
+  //   return this.http.get<IPonude[]>(`${this.resourceUrlPostupciSifra}/${sifraPostupka}`, { observe: 'response' });
+  // }
 
   query(req?: any): Observable<EntityArrayResponseType> {
     const options = createRequestOption(req);

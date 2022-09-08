@@ -48,7 +48,7 @@ public interface PonudeRepository extends JpaRepository<Ponude, Long>, JpaSpecif
         "  \n" +
         "  INNER JOIN ponudjaci ON (ponude.ponudjaci_id = ponudjaci.id\n" +
         " )WHERE ponude.sifra_postupka=:sifra)a\n" +
-        "WHERE rn=1",
+        "WHERE rn=:sifra",
         nativeQuery = true
     )
     List<Ponude> findBySifraPostupkaPonudjaci(@Param("sifra") Integer sifra);
