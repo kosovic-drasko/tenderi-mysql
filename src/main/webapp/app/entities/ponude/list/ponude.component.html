@@ -3,7 +3,7 @@
     <!--    <mat-button-toggle *ngIf="!postupak" class="nadji" (click)="sidenav.toggle()">-->
     <!--      <mat-icon>search</mat-icon>-->
     <!--    </mat-button-toggle>-->
-    <mat-form-field>
+    <mat-form-field *ngIf="!postupak">
       <input matInput [(ngModel)]="brPonude" placeholder="Sifra Ponude" (keyup)="nadji()" />
       <button *ngIf="brPonude" matSuffix mat-icon-button aria-label="Clear" (click)="ponisti()">
         <mat-icon>close</mat-icon>
@@ -14,7 +14,7 @@
     <div id="page-heading" data-cy="SpecifikacijeHeading">
       <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
         <input hidden #fileInput type="file" id="file" />
-        <mat-button-toggle class="nadji" (click)="sidenav.toggle()">
+        <mat-button-toggle *ngIf="!postupak" class="nadji" (click)="sidenav.toggle()">
           <mat-icon>search</mat-icon>
         </mat-button-toggle>
         <div></div>
