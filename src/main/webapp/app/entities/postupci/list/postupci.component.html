@@ -70,7 +70,7 @@
           <ng-container matColumnDef="datum objave">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Datum Objave</th>
             <td mat-cell *matCellDef="let element" [routerLink]="['/tenderi-home']" [queryParams]="{ sifra: element.sifraPostupka }">
-              {{ element.datumObjave }}
+              {{ element.datumObjave | formatMediumDate }}
             </td>
             <td mat-footer-cell *matFooterCellDef></td>
           </ng-container>
@@ -78,7 +78,7 @@
           <ng-container matColumnDef="datum otvaranja">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Datum Otvaranja</th>
             <td mat-cell *matCellDef="let element" [routerLink]="['/tenderi-home']" [queryParams]="{ sifra: element.sifraPostupka }">
-              {{ element.datumOtvaranja }}
+              {{ element.datumOtvaranja | formatMediumDate }}
             </td>
             <td mat-footer-cell *matFooterCellDef></td>
           </ng-container>

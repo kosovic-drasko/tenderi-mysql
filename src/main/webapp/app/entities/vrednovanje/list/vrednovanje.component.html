@@ -101,17 +101,17 @@
         </ng-container>
         <ng-container matColumnDef="bod cijena">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Bod Cijena</th>
-          <td mat-cell *matCellDef="let element">{{ element.bodCijena }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.bodCijena | number }}</td>
           <td mat-footer-cell *matFooterCellDef></td>
         </ng-container>
         <ng-container matColumnDef="bod rok">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Bod Rok</th>
-          <td mat-cell *matCellDef="let element">{{ element.bodRok }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.bodRok | number }}</td>
           <td mat-footer-cell *matFooterCellDef></td>
         </ng-container>
         <ng-container matColumnDef="bod ukupno">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Bod Ukupno</th>
-          <td mat-cell *matCellDef="let element">{{ element.bodUkupno }}</td>
+          <td mat-cell *matCellDef="let element">{{ element.bodUkupno | number }}</td>
           <td mat-footer-cell *matFooterCellDef></td>
         </ng-container>
         <tr class="heder" mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
