@@ -87,7 +87,7 @@
           <ng-container matColumnDef="procijenjena vrijednost">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Procijenjena Vrijednost</th>
             <td mat-cell *matCellDef="let element">{{ element.procijenjenaVrijednost }}</td>
-            <td mat-footer-cell *matFooterCellDef>{{ ukupno | number: '1.2-2' }}</td>
+            <td mat-footer-cell *matFooterCellDef>{{ ukupno | number }}</td>
           </ng-container>
           <div>
             <ng-container matColumnDef="action" stickyEnd>

@@ -24,6 +24,7 @@ export class PonudeComponent implements AfterViewInit, OnInit {
   isLoading = false;
   ukupno?: number;
   brojObrazac?: number = 0;
+  sifraPonude?: any;
 
   public displayedColumns = [
     'sifra postupka',
@@ -239,5 +240,26 @@ export class PonudeComponent implements AfterViewInit, OnInit {
 
   protected onError(): void {
     console.log('Greska');
+  }
+
+  deleteSifra(): void {
+    this.ponudeService.deleteSifraPonude(this.brPonude).subscribe();
+    this.loadPageSifra();
+  }
+
+  deleteSelected(): void {
+    this.ponudeService.deleteSelected();
+    // this.loadPageSifra();
+  }
+
+  openBrisiSelektovano(contentBrisiSelect: any): any {
+    this.modalService.open(contentBrisiSelect, { ariaLabelledBy: 'modal-basic-title' });
+  }
+
+  openBrisiPonudu(contentBrisiPoSifriPonude: any): any {
+    this.modalService.open(contentBrisiPoSifriPonude, { ariaLabelledBy: 'modal-basic-title' });
+  }
+  updateSelected(id: number): any {
+    this.ponudeService.updateSelected(id);
   }
 }
