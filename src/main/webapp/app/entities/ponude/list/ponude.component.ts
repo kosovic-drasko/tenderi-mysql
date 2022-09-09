@@ -244,12 +244,20 @@ export class PonudeComponent implements AfterViewInit, OnInit {
 
   deleteSifra(): void {
     this.ponudeService.deleteSifraPonude(this.brPonude).subscribe();
-    this.loadPageSifra();
+    if (this.postupak !== undefined) {
+      this.loadPageSifra();
+    } else {
+      this.loadPage();
+    }
   }
 
   deleteSelected(): void {
     this.ponudeService.deleteSelected();
-    // this.loadPageSifra();
+    if (this.postupak !== undefined) {
+      this.loadPageSifra();
+    } else {
+      this.loadPage();
+    }
   }
 
   openBrisiSelektovano(contentBrisiSelect: any): any {
