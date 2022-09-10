@@ -6,12 +6,12 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: 'ponude',
-        data: { pageTitle: 'tenderiApp.ponude.home.title' },
+        data: { pageTitle: 'tenderApp.ponude.home.title' },
         loadChildren: () => import('./ponude/ponude.module').then(m => m.PonudeModule),
       },
       {
         path: 'hvale-ponude',
-        data: { pageTitle: 'tenderiApp.hvalePonude.home.title' },
+        data: { pageTitle: 'tenderApp.hvalePonude.home.title' },
         loadChildren: () => import('./hvale-ponude/hvale-ponude.module').then(m => m.HvalePonudeModule),
       },
       {
@@ -21,27 +21,27 @@ import { RouterModule } from '@angular/router';
       },
       {
         path: 'postupci',
-        data: { pageTitle: 'tenderiApp.postupci.home.title' },
+        data: { pageTitle: 'tenderApp.postupci.home.title' },
         loadChildren: () => import('./postupci/postupci.module').then(m => m.PostupciModule),
       },
       {
         path: 'specifikacije',
-        data: { pageTitle: 'tenderiApp.specifikacije.home.title' },
+        data: { pageTitle: 'tenderApp.specifikacije.home.title' },
         loadChildren: () => import('./specifikacije/specifikacije.module').then(m => m.SpecifikacijeModule),
       },
       {
         path: 'tenderi-home',
-        data: { pageTitle: 'tenderiApp.tenderiHome.home.title' },
+        data: { pageTitle: 'tenderApp.tenderiHome.home.title' },
         loadChildren: () => import('./tenderi-home/tenderi-home.module').then(m => m.TenderiHomeModule),
       },
       {
         path: 'vrednovanje',
-        data: { pageTitle: 'tenderiApp.vrednovanje.home.title' },
+        data: { pageTitle: 'tenderApp.vrednovanje.home.title' },
         loadChildren: () => import('./vrednovanje/vrednovanje.module').then(m => m.VrednovanjeModule),
       },
       {
         path: 'prvorangirani',
-        data: { pageTitle: 'tenderiApp.prvorangirani.home.title' },
+        data: { pageTitle: 'tenderApp.prvorangirani.home.title' },
         loadChildren: () => import('./prvorangirani/prvorangirani.module').then(m => m.PrvorangiraniModule),
       },
       {
@@ -51,7 +51,7 @@ import { RouterModule } from '@angular/router';
       },
       {
         path: 'proba',
-        data: { pageTitle: 'tenderApp.proba.home.title' },
+
         loadChildren: () => import('./proba/proba.model').then(m => m.Proba),
       },
       {
