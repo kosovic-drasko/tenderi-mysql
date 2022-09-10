@@ -8,9 +8,9 @@
         "createOrEditLabel": "Kreirajte ili izmenite Ponude",
         "notFound": "Nema ponude"
       },
-      "created": "Kreiran je novi Ponude sa id {{ param }}",
-      "updated": "Ponude sa id {{ param }} je ažuriran",
-      "deleted": "Ponude sa id {{ param }} je obrisan",
+      "created": "Kreiran je nova Ponuda sa id {{ param }}",
+      "updated": "Ponuda sa id {{ param }} je ažuriran",
+      "deleted": "Ponuda sa id {{ param }} je obrisan",
       "delete": {
         "question": "Da li ste sigurni da želite da obrišete Ponudu sa id {{ id }}?"
       },
