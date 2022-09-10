@@ -1,18 +1,18 @@
 {
-  "tenderApp": {
+  "tenderiApp": {
     "ponude": {
       "home": {
-        "title": "Ponude",
+        "title": "Ponudes",
         "refreshListLabel": "Refresh list",
-        "createLabel": "Kreiraj novu Ponudu",
+        "createLabel": "Kreiraj novi Ponude",
         "createOrEditLabel": "Kreirajte ili izmenite Ponude",
-        "notFound": "Nema ponude"
+        "notFound": "No Ponudes found"
       },
-      "created": "Kreiran je nova Ponuda sa id {{ param }}",
-      "updated": "Ponuda sa id {{ param }} je ažuriran",
-      "deleted": "Ponuda sa id {{ param }} je obrisan",
+      "created": "Kreiran je novi Ponude pod nazivom {{ param }}",
+      "updated": "Ponude pod nazivom {{ param }} je ažuriran",
+      "deleted": "Ponude pod nazivom {{ param }} je obrisan",
       "delete": {
-        "question": "Da li ste sigurni da želite da obrišete Ponudu sa id {{ id }}?"
+        "question": "Da li ste sigurni da želite da obrišete Ponude pod nazivom {{ id }}?"
       },
       "detail": {
         "title": "Ponude"

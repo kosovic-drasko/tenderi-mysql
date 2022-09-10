@@ -1,10 +1,10 @@
 {
-  "tenderApp": {
+  "tenderiApp": {
     "vrednovanje": {
       "home": {
-        "title": "Vrednovanje",
+        "title": "Vrednovanjes",
         "refreshListLabel": "Refresh list",
-        "notFound": "Nema vrednovanja"
+        "notFound": "No Vrednovanjes found"
       },
       "detail": {
         "title": "Vrednovanje"

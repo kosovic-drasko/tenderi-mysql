@@ -1,6 +1,6 @@
 <div class="modal-content">
   <div class="modal-header">
-    <h5 class="modal-title" jhiTranslate="tenderApp.postupci.home.createOrEditLabel">Postupci</h5>
+    <h5 class="modal-title" jhiTranslate="tenderiApp.postupci.home.createOrEditLabel">Postupci</h5>
   </div>
   <div class="d-flex justify-content-center">
     <div class="col-8">
@@ -18,7 +18,7 @@
               formControlName="sifraPostupka"
               placeholder="Sifra Postupka"
             />
-            <label class="form-label" jhiTranslate="tenderApp.postupci.sifraPostupka" for="field_sifraPostupka">Sifra Postupka</label>
+            <label class="form-label" jhiTranslate="tenderiApp.postupci.sifraPostupka" for="field_sifraPostupka">Sifra Postupka</label>
             <div
               *ngIf="
                 editForm.get('sifraPostupka')!.invalid && (editForm.get('sifraPostupka')!.dirty || editForm.get('sifraPostupka')!.touched)
@@ -51,7 +51,7 @@
               formControlName="brojTendera"
               placeholder="Broj Tendera"
             />
-            <label class="form-label" jhiTranslate="tenderApp.postupci.brojTendera" for="field_brojTendera">Broj Tendera</label>
+            <label class="form-label" jhiTranslate="tenderiApp.postupci.brojTendera" for="field_brojTendera">Broj Tendera</label>
           </div>
 
           <div class="form-floating">
@@ -64,7 +64,7 @@
               formControlName="opisPostupka"
               placeholder="Opis Postupka"
             />
-            <label class="form-label" jhiTranslate="tenderApp.postupci.opisPostupka" for="field_opisPostupka">Opis Postupka</label>
+            <label class="form-label" jhiTranslate="tenderiApp.postupci.opisPostupka" for="field_opisPostupka">Opis Postupka</label>
             <div
               *ngIf="
                 editForm.get('opisPostupka')!.invalid && (editForm.get('opisPostupka')!.dirty || editForm.get('opisPostupka')!.touched)
@@ -90,7 +90,7 @@
               formControlName="vrstaPostupka"
               placeholder="Vrsta Postupka"
             />
-            <label class="form-label" jhiTranslate="tenderApp.postupci.vrstaPostupka" for="field_vrstaPostupka">Vrsta Postupka</label>
+            <label class="form-label" jhiTranslate="tenderiApp.postupci.vrstaPostupka" for="field_vrstaPostupka">Vrsta Postupka</label>
             <div
               *ngIf="
                 editForm.get('vrstaPostupka')!.invalid && (editForm.get('vrstaPostupka')!.dirty || editForm.get('vrstaPostupka')!.touched)
@@ -119,7 +119,7 @@
                 formControlName="datumObjave"
                 placeholder="Datum Objave"
               />
-              <!--              <label class="form-label" jhiTranslate="tenderApp.postupci.datumObjave" for="field_datumObjave">Datum-->
+              <!--              <label class="form-label" jhiTranslate="tenderiApp.postupci.datumObjave" for="field_datumObjave">Datum-->
               <!--                Objave</label>-->
               <button type="button" class="btn btn-secondary" (click)="datumObjaveDp.toggle()">
                 <fa-icon icon="calendar-alt"></fa-icon>
@@ -128,7 +128,7 @@
           </div>
 
           <div class="form-floating">
-            <!--            <label class="form-label" jhiTranslate="tenderApp.postupci.datumOtvaranja" for="field_datumOtvaranja">Datum-->
+            <!--            <label class="form-label" jhiTranslate="tenderiApp.postupci.datumOtvaranja" for="field_datumOtvaranja">Datum-->
             <!--              Otvaranja</label>-->
             <div class="input-group">
               <input
@@ -159,7 +159,7 @@
               formControlName="kriterijumCijena"
               placeholder="Kriterijum Cijena"
             />
-            <label class="form-label" jhiTranslate="tenderApp.postupci.kriterijumCijena" for="field_kriterijumCijena"
+            <label class="form-label" jhiTranslate="tenderiApp.postupci.kriterijumCijena" for="field_kriterijumCijena"
               >Kriterijum Cijena</label
             >
             <div
@@ -195,7 +195,9 @@
               formControlName="drugiKriterijum"
               placeholder="Drugi Kriterijum"
             />
-            <label class="form-label" jhiTranslate="tenderApp.postupci.drugiKriterijum" for="field_drugiKriterijum">Drugi Kriterijum</label>
+            <label class="form-label" jhiTranslate="tenderiApp.postupci.drugiKriterijum" for="field_drugiKriterijum"
+              >Drugi Kriterijum</label
+            >
             <div
               *ngIf="
                 editForm.get('drugiKriterijum')!.invalid &&

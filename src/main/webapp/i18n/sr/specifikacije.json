@@ -1,12 +1,12 @@
 {
-  "tenderApp": {
+  "tenderiApp": {
     "specifikacije": {
       "home": {
-        "title": "Specifikacije",
+        "title": "Specifikacijes",
         "refreshListLabel": "Refresh list",
         "createLabel": "Kreiraj novi Specifikacije",
         "createOrEditLabel": "Kreirajte ili izmenite Specifikacije",
-        "notFound": "Nema specifikacija"
+        "notFound": "No Specifikacijes found"
       },
       "created": "Kreiran je novi Specifikacije pod nazivom {{ param }}",
       "updated": "Specifikacije pod nazivom {{ param }} je ažuriran",

@@ -6,12 +6,12 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: 'ponude',
-        data: { pageTitle: 'tenderApp.ponude.home.title' },
+        data: { pageTitle: 'tenderiApp.ponude.home.title' },
         loadChildren: () => import('./ponude/ponude.module').then(m => m.PonudeModule),
       },
       {
         path: 'hvale-ponude',
-        data: { pageTitle: 'tenderApp.hvalePonude.home.title' },
+        data: { pageTitle: 'tenderiApp.hvalePonude.home.title' },
         loadChildren: () => import('./hvale-ponude/hvale-ponude.module').then(m => m.HvalePonudeModule),
       },
       {
@@ -21,42 +21,42 @@ import { RouterModule } from '@angular/router';
       },
       {
         path: 'postupci',
-        data: { pageTitle: 'tenderApp.postupci.home.title' },
+        data: { pageTitle: 'tenderiApp.postupci.home.title' },
         loadChildren: () => import('./postupci/postupci.module').then(m => m.PostupciModule),
       },
       {
         path: 'specifikacije',
-        data: { pageTitle: 'tenderApp.specifikacije.home.title' },
+        data: { pageTitle: 'tenderiApp.specifikacije.home.title' },
         loadChildren: () => import('./specifikacije/specifikacije.module').then(m => m.SpecifikacijeModule),
       },
       {
         path: 'tenderi-home',
-        data: { pageTitle: 'tenderApp.tenderiHome.home.title' },
+        data: { pageTitle: 'tenderiApp.tenderiHome.home.title' },
         loadChildren: () => import('./tenderi-home/tenderi-home.module').then(m => m.TenderiHomeModule),
       },
       {
         path: 'vrednovanje',
-        data: { pageTitle: 'tenderApp.vrednovanje.home.title' },
+        data: { pageTitle: 'tenderiApp.vrednovanje.home.title' },
         loadChildren: () => import('./vrednovanje/vrednovanje.module').then(m => m.VrednovanjeModule),
       },
       {
         path: 'prvorangirani',
-        data: { pageTitle: 'tenderApp.prvorangirani.home.title' },
+        data: { pageTitle: 'tenderiApp.prvorangirani.home.title' },
         loadChildren: () => import('./prvorangirani/prvorangirani.module').then(m => m.PrvorangiraniModule),
       },
       {
         path: 'hvale',
-        data: { pageTitle: 'tenderApp.prvorangirani.home.title' },
+        data: { pageTitle: 'tenderiApp.prvorangirani.home.title' },
         loadChildren: () => import('./hvale-ponude/hvale-ponude.module').then(m => m.HvalePonudeModule),
       },
       {
         path: 'proba',
 
-        loadChildren: () => import('./proba/proba.model').then(m => m.Proba),
+        loadChildren: () => import('./proba/proba.module').then(m => m.ProbaModule),
       },
       {
         path: 'pomoc',
-        data: { authorities: ['ROLE_MANAGER', 'ROLE_ADMIN'], pageTitle: 'tenderApp.pomoc.home.title' },
+        data: { authorities: ['ROLE_MANAGER', 'ROLE_ADMIN'], pageTitle: 'tenderiApp.pomoc.home.title' },
         loadChildren: () => import('./pomoc/pomoc.module').then(m => m.PomocModule),
       },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */

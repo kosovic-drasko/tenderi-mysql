@@ -1,11 +1,11 @@
 <div>
   <h5 id="page-heading" data-cy="PonudjaciHeading">
-    <span jhiTranslate="tenderApp.ponudjaci.home.title">Ponudjaci</span>
+    <span jhiTranslate="tenderiApp.ponudjaci.home.title">Ponudjaci</span>
 
     <div class="d-flex justify-content-end">
       <button id="jh-create-entity" data-cy="entityCreateButton" class="btn btn-primary jh-create-entity create-ponudjaci" (click)="add()">
         <fa-icon icon="plus"></fa-icon>
-        <span jhiTranslate="tenderApp.ponudjaci.home.createLabel"> Create a new Ponudjaci </span>
+        <span jhiTranslate="tenderiApp.ponudjaci.home.createLabel"> Create a new Ponudjaci </span>
       </button>
     </div>
   </h5>
@@ -15,7 +15,7 @@
   <jhi-alert></jhi-alert>
 
   <div class="alert alert-warning" id="no-result" *ngIf="ponudjacis?.body?.length === 0">
-    <span jhiTranslate="tenderApp.ponudjaci.home.notFound">No ponudjacis found</span>
+    <span jhiTranslate="tenderiApp.ponudjaci.home.notFound">No ponudjacis found</span>
   </div>
 
   <table mat-table id="ExampleTable" matTableExporter [dataSource]="dataSource" matSort matSortStart="desc">

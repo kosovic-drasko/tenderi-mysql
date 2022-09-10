@@ -1,8 +1,8 @@
 {
-  "tenderApp": {
+  "tenderiApp": {
     "hvalePonude": {
       "home": {
-        "title": "Hvale Ponude",
+        "title": "Hvale Ponudes",
         "refreshListLabel": "Refresh list",
         "notFound": "No Hvale Ponudes found"
       },

@@ -1,8 +1,8 @@
 {
-  "tenderApp": {
+  "tenderiApp": {
     "ponude": {
       "home": {
-        "title": "Ponude",
+        "title": "Ponudes",
         "refreshListLabel": "Refresh list",
         "createLabel": "Create a new Ponude",
         "createOrEditLabel": "Create or edit a Ponude",

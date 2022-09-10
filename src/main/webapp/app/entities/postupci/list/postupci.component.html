@@ -13,7 +13,7 @@
             (click)="add()"
           >
             <fa-icon icon="plus"></fa-icon>
-            <span jhiTranslate="tenderApp.postupci.home.createLabel"> Create a new Postupci </span>
+            <span jhiTranslate="tenderiApp.postupci.home.createLabel"> Create a new Postupci </span>
           </button>
         </div>
       </h2>
@@ -23,7 +23,7 @@
       <jhi-alert></jhi-alert>
 
       <div class="alert alert-warning" id="no-result" *ngIf="postupcis?.body?.length === 0">
-        <span jhiTranslate="tenderApp.postupci.home.notFound">No postupcis found</span>
+        <span jhiTranslate="tenderiApp.postupci.home.notFound">No postupcis found</span>
       </div>
 
       <div class="table-responsive" id="entities" *ngIf="postupcis">
