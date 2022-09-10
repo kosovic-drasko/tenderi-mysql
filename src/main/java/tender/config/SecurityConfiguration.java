@@ -60,6 +60,7 @@ public class SecurityConfiguration {
                 .antMatchers("/content/**")
                 .antMatchers("/swagger-ui/**")
                 .antMatchers("/api/ponude/file")
+                .antMatchers("/api/ponude/file/**")
                 .antMatchers("/api/specifikacije/file/**")
                 .antMatchers("/api/uploadfiles/specifikacije")
                 .antMatchers("/api/set")
