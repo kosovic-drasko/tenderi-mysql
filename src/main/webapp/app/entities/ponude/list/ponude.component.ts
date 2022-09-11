@@ -254,9 +254,13 @@ export class PonudeComponent implements AfterViewInit, OnInit {
   deleteSelected(): void {
     this.ponudeService.deleteSelected();
     if (this.postupak !== undefined) {
-      this.loadPageSifra();
+      setTimeout(() => {
+        this.loadPageSifra();
+      }, 5000);
     } else {
-      this.loadPage();
+      setTimeout(() => {
+        this.loadPage();
+      }, 5000);
     }
   }
 

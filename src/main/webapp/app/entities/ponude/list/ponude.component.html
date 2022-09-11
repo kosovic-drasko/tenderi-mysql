@@ -1,3 +1,5 @@
+<!--<button (click)="loadPage()">LoadPage</button>-->
+<!--<button (click)="loadPageSifra()">LoadPageSifra</button>-->
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav mode="side">
     <mat-form-field *ngIf="!postupak">
@@ -193,7 +195,7 @@
       </div>
       <div class="modal-footer">
         <button mat-button color="primary" (click)="modal.close('Save click')">NE</button>
-        <button mat-button color="warn" (click)="deleteSelected()" (keyup)="loadPageSifra()" (click)="modal.close('Save click')">DA</button>
+        <button mat-button color="warn" (click)="deleteSelected()" (click)="modal.close('Save click')">DA</button>
       </div>
     </ng-template>
 
