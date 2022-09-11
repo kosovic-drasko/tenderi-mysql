@@ -10,6 +10,7 @@ import { IPonudjaci } from '../../ponudjaci/ponudjaci.model';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
+import { AlertService } from '../../../core/util/alert.service';
 
 @Component({
   selector: 'jhi-ponude',
@@ -51,7 +52,8 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     protected ponudeService: PonudeService,
     protected activatedRoute: ActivatedRoute,
     protected router: Router,
-    protected modalService: NgbModal
+    protected modalService: NgbModal,
+    protected alertService: AlertService
   ) {}
 
   ngAfterViewInit(): void {
@@ -245,9 +247,13 @@ export class PonudeComponent implements AfterViewInit, OnInit {
   deleteSifra(): void {
     this.ponudeService.deleteSifraPonude(this.brPonude).subscribe();
     if (this.postupak !== undefined) {
-      this.loadPageSifra();
+      setTimeout(() => {
+        this.loadPageSifra();
+      }, 1000);
     } else {
-      this.loadPage();
+      setTimeout(() => {
+        this.loadPage();
+      }, 1000);
     }
   }
 
@@ -256,12 +262,13 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     if (this.postupak !== undefined) {
       setTimeout(() => {
         this.loadPageSifra();
-      }, 5000);
+      }, 1000);
     } else {
       setTimeout(() => {
         this.loadPage();
-      }, 5000);
+      }, 1000);
     }
+    this.randomMethod();
   }
 
   openBrisiSelektovano(contentBrisiSelect: any): any {
@@ -273,5 +280,26 @@ export class PonudeComponent implements AfterViewInit, OnInit {
   }
   updateSelected(id: number): any {
     this.ponudeService.updateSelected(id);
+  }
+
+  randomMethod(): void {
+    // this.alertService.get().push(
+    //   this.alertService.addAlert({
+    //     type: 'success',
+    //     message: 'Uspjesno ste obrisali!',
+    //     timeout: 3000,
+    //     toast: false,
+    //
+    //     },
+    //     this.alertService.get()
+    //   )
+    //
+    // );
+
+    // setTimeout(() => {
+    //
+    // }, 1000);
+    const napomena = this.alertService.addAlert({ type: 'success', message: 'A short message', timeout: 1000 }, []);
+    this.alertService.get().push(napomena);
   }
 }

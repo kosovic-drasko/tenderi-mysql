@@ -28,8 +28,8 @@ export class PonudeService {
     return this.http.post<IPonude>(this.resourceUrl, ponude, { observe: 'response' });
   }
 
-  deleteSifraPonude(sifraPonude: null | undefined): any {
-    return this.http.delete(`${this.resourceUrlSifraPonudeDelete}/${sifraPonude}`);
+  deleteSifraPonude(sifraPonude: null | undefined): Observable<HttpResponse<{}>> {
+    return this.http.delete(`${this.resourceUrlSifraPonudeDelete}/${sifraPonude}`, { observe: 'response' });
   }
 
   update(ponude: IPonude): Observable<EntityResponseType> {
