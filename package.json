@@ -96,6 +96,7 @@
     "browser-sync-client": "^2.27.10",
     "dayjs": "1.11.0",
     "mat-table-exporter": "^10.2.4",
+    "ng-jhipster": "^0.16.0",
     "ngx-infinite-scroll": "13.0.1",
     "ngx-webstorage": "9.0.0",
     "rxjs": "7.5.5",
