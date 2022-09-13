@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6e0c2aaf-caab-4d20-85bb-5f7253c78ddc" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tender/repository/PonudeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/repository/PonudeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/liquibase/master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
       <recent name="tender.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TenderiApp">
+  <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -133,7 +135,7 @@
       <workItem from="1662401337525" duration="6589000" />
       <workItem from="1662477159124" duration="4327000" />
       <workItem from="1662742457561" duration="23832000" />
-      <workItem from="1663051972580" duration="21283000" />
+      <workItem from="1663051972580" duration="23700000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1662362576920</created>
@@ -366,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663096764990</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="init">
+      <created>1663098197160</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1663098197160</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

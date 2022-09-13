@@ -38,16 +38,17 @@ public interface PonudeRepository extends JpaRepository<Ponude, Long>, JpaSpecif
     void updateSlected(@Param("Id") Long Id);
 
     @Query(
-        value = "\tSELECT *\n" +
-        "FROM \n" +
-        "    (SELECT ponude.*,\n" +
-        "       \n" +
-        "         row_number()\n" +
-        "        OVER (PARTITION BY ponude.sifra_ponude order by ponudjaci_id) AS row_num\n" +
-        "    FROM ponude\n" +
-        "\t\t\n" +
-        "\t\tJOIN ponudjaci on ponude.ponudjaci_id=ponudjaci.id) t\n" +
-        "WHERE row_num =1",
+        value = "SELECT * FROM (SELECT \n" +
+        "  ponude.*,\n" +
+        "  ponudjaci.naziv_ponudjaca,\n" +
+        "  ROW_NUMBER() over(partition BY ponude.sifra_ponude ORDER BY \n" +
+        "ponude.id DESC)rn\n" +
+        "FROM\n" +
+        "  ponude\n" +
+        "  \n" +
+        "  INNER JOIN ponudjaci ON (ponude.ponudjaci_id = ponudjaci.id\n" +
+        " )WHERE ponude.sifra_postupka=:sifra)a\n" +
+        "WHERE rn=1",
         nativeQuery = true
     )
     List<Ponude> findBySifraPostupkaPonudjaci(@Param("sifra") Integer sifra);
