@@ -19,6 +19,7 @@ import { NotifierService } from 'angular-notifier';
   styleUrls: ['./ponude.component.scss'],
 })
 export class PonudeComponent implements AfterViewInit, OnInit {
+  alerts: any[];
   ponudjaci?: IPonudjaci[] = [];
   ponudes?: HttpResponse<IPonude[]>;
   ponudjaciPostupak?: any;
@@ -58,6 +59,7 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     protected notifer: NotifierService
   ) {
     this.notifier = notifer;
+    this.alerts = [];
   }
 
   ngAfterViewInit(): void {

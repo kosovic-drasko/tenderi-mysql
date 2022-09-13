@@ -1,4 +1,3 @@
-<!--<button (click)="loadPage()">LoadPage</button>-->
 <!--<button class="btn btn-primary" (click)="showNotification('success','Obrisano')">MSG</button>-->
 <!--<button (click)="showNotification('success','Obrisano',3)">LoadPageSifra</button>-->
 
@@ -64,9 +63,10 @@
       </div>
 
       <div class="table-responsive" id="entities">
-        <jhi-alert-error></jhi-alert-error>
         <jhi-alert></jhi-alert>
-        <notifier-container style="width: 200px"></notifier-container>
+        <div class="napomena">
+          <notifier-container style="width: 200px"></notifier-container>
+        </div>
 
         <div class="alert alert-warning" id="no-result" *ngIf="ponudes?.body?.length === 0">
           <span>Nema zapisa Ponuda</span>
