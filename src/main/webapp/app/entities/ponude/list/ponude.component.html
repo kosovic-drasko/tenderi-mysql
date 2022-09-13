@@ -71,6 +71,12 @@
         <div class="alert alert-warning" id="no-result" *ngIf="ponudes?.body?.length === 0">
           <span>Nema zapisa Ponuda</span>
         </div>
+        <div class="alert alert-success" *ngIf="obrisanoSelektovano">
+          <span>Obrisane su izabrane partije</span>
+        </div>
+        <div class="alert alert-success" *ngIf="obrisanoSifraPonude">
+          <span>Obrisan ponuda</span>
+        </div>
         <table
           mat-table
           id="ExampleTable"

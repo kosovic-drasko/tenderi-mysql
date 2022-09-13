@@ -28,6 +28,8 @@ export class PonudeComponent implements AfterViewInit, OnInit {
   ukupno?: number;
   brojObrazac?: number = 0;
   sifraPonude?: any;
+  obrisanoSelektovano?: boolean = false;
+  obrisanoSifraPonude?: boolean = false;
   private readonly notifier?: NotifierService;
   public displayedColumns = [
     'sifra postupka',
@@ -269,7 +271,10 @@ export class PonudeComponent implements AfterViewInit, OnInit {
         this.loadPage();
       }, 500);
     }
-    this.showNotification('success', 'Obrisano', '2');
+    this.obrisanoSelektovano = true;
+    setTimeout(() => {
+      this.obrisanoSelektovano = false;
+    }, 5000);
   }
 
   deleteSelected(): void {
@@ -283,7 +288,12 @@ export class PonudeComponent implements AfterViewInit, OnInit {
         this.loadPage();
       }, 500);
     }
-    this.showNotification('success', 'Obrisano', 'id');
+    this.obrisanoSelektovano = true;
+    setTimeout(() => {
+      this.obrisanoSelektovano = false;
+    }, 5000);
+
+    // this.showNotification('success', 'Obrisano', 'id');
   }
 
   openBrisiSelektovano(contentBrisiSelect: any): any {
