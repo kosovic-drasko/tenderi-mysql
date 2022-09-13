@@ -11,6 +11,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { AlertService } from '../../../core/util/alert.service';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'jhi-ponude',
@@ -26,7 +27,7 @@ export class PonudeComponent implements AfterViewInit, OnInit {
   ukupno?: number;
   brojObrazac?: number = 0;
   sifraPonude?: any;
-
+  private readonly notifier?: NotifierService;
   public displayedColumns = [
     'sifra postupka',
     'sifraPonude',
@@ -53,12 +54,23 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     protected activatedRoute: ActivatedRoute,
     protected router: Router,
     protected modalService: NgbModal,
-    protected alertService: AlertService
-  ) {}
+    protected alertService: AlertService,
+    protected notifer: NotifierService
+  ) {
+    this.notifier = notifer;
+  }
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
+  }
+  notifyBrisanje(type: string, message: string, id: string): void {
+    this.notifier?.notify(type, message, id);
+    // this.notifier?.getConfig();
+  }
+
+  public showNotification(type: string, message: string, id: string): void {
+    this.notifier?.notify(type, message, id);
   }
 
   loadPage(): void {
@@ -249,12 +261,13 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     if (this.postupak !== undefined) {
       setTimeout(() => {
         this.loadPageSifra();
-      }, 1000);
+      }, 500);
     } else {
       setTimeout(() => {
         this.loadPage();
-      }, 1000);
+      }, 500);
     }
+    this.showNotification('success', 'Obrisano', '2');
   }
 
   deleteSelected(): void {
@@ -262,13 +275,13 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     if (this.postupak !== undefined) {
       setTimeout(() => {
         this.loadPageSifra();
-      }, 1000);
+      }, 500);
     } else {
       setTimeout(() => {
         this.loadPage();
-      }, 1000);
+      }, 500);
     }
-    this.randomMethod();
+    this.showNotification('success', 'Obrisano', 'id');
   }
 
   openBrisiSelektovano(contentBrisiSelect: any): any {
@@ -280,26 +293,5 @@ export class PonudeComponent implements AfterViewInit, OnInit {
   }
   updateSelected(id: number): any {
     this.ponudeService.updateSelected(id);
-  }
-
-  randomMethod(): void {
-    // this.alertService.get().push(
-    //   this.alertService.addAlert({
-    //     type: 'success',
-    //     message: 'Uspjesno ste obrisali!',
-    //     timeout: 3000,
-    //     toast: false,
-    //
-    //     },
-    //     this.alertService.get()
-    //   )
-    //
-    // );
-
-    // setTimeout(() => {
-    //
-    // }, 1000);
-    const napomena = this.alertService.addAlert({ type: 'success', message: 'A short message', timeout: 1000 }, []);
-    this.alertService.get().push(napomena);
   }
 }

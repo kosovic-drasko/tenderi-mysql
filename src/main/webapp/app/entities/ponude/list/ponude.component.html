@@ -1,5 +1,7 @@
 <!--<button (click)="loadPage()">LoadPage</button>-->
-<!--<button (click)="loadPageSifra()">LoadPageSifra</button>-->
+<!--<button class="btn btn-primary" (click)="showNotification('success','Obrisano')">MSG</button>-->
+<!--<button (click)="showNotification('success','Obrisano',3)">LoadPageSifra</button>-->
+
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav mode="side">
     <mat-form-field *ngIf="!postupak">
@@ -64,6 +66,7 @@
       <div class="table-responsive" id="entities">
         <jhi-alert-error></jhi-alert-error>
         <jhi-alert></jhi-alert>
+        <notifier-container style="width: 200px"></notifier-container>
 
         <div class="alert alert-warning" id="no-result" *ngIf="ponudes?.body?.length === 0">
           <span>Nema zapisa Ponuda</span>
