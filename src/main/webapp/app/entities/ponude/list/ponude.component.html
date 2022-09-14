@@ -62,21 +62,17 @@
         </div>
       </div>
 
+      <jhi-alert></jhi-alert>
+      <div class="alert alert-warning" id="no-result" *ngIf="ponudes?.body?.length === 0">
+        <span>Nema zapisa Ponuda</span>
+      </div>
+      <div class="alert alert-success" *ngIf="obrisanoSelektovano">
+        <span>Obrisane su izabrane partije</span>
+      </div>
+      <div class="alert alert-success" *ngIf="obrisanoSifraPonude">
+        <span>Obrisan ponuda</span>
+      </div>
       <div class="table-responsive" id="entities">
-        <jhi-alert></jhi-alert>
-        <div class="napomena">
-          <notifier-container style="width: 200px"></notifier-container>
-        </div>
-
-        <div class="alert alert-warning" id="no-result" *ngIf="ponudes?.body?.length === 0">
-          <span>Nema zapisa Ponuda</span>
-        </div>
-        <div class="alert alert-success" *ngIf="obrisanoSelektovano">
-          <span>Obrisane su izabrane partije</span>
-        </div>
-        <div class="alert alert-success" *ngIf="obrisanoSifraPonude">
-          <span>Obrisan ponuda</span>
-        </div>
         <table
           mat-table
           id="ExampleTable"
