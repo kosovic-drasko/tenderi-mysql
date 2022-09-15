@@ -1,5 +1,12 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side"> </mat-sidenav>
+  <mat-sidenav #sidenav mode="side">
+    <!--    <mat-form-field *ngIf="!postupak">-->
+    <!--      <input matInput [(ngModel)]="brPonude" placeholder="Sifra Ponude" (keyup)="nadji()" />-->
+    <!--      <button *ngIf="brPonude" matSuffix mat-icon-button aria-label="Clear" (click)="ponisti()">-->
+    <!--        <mat-icon>close</mat-icon>-->
+    <!--      </button>-->
+    <!--    </mat-form-field>-->
+  </mat-sidenav>
   <mat-sidenav-content>
     <div>
       <div class="btn-group" role="group" aria-label="Basic example">
@@ -22,16 +29,10 @@
           <mat-button-toggle *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_USER']" matTooltip=" Excel fajl" (click)="obrazacExcelPostupak(1)">
             <img src="../../../../content/images/icons8-microsoft-excel-48.png" alt="" />
           </mat-button-toggle>
-
-          <!--      <mat-button-toggle *jhiHasAnyAuthority="'ROLE_ADMIN'" matTooltip="Ukloni cijelu ponudu" (click)="open(contentBrisiPoSifriPonude)">-->
-          <!--        Ukloni Ponudu</mat-button-toggle-->
-          <!--      >-->
         </mat-button-toggle-group>
       </div>
       <jhi-alert-error></jhi-alert-error>
-
       <jhi-alert></jhi-alert>
-
       <div class="alert alert-warning" id="no-result" *ngIf="specifikacijes?.body?.length === 0">
         <span jhiTranslate="tenderiApp.specifikacije.home.notFound">No specifikacijes found</span>
       </div>

@@ -3,7 +3,10 @@
 
     <changeSet id="3" author="Drasko">
         <sql>
-            CREATE TRIGGER `unesi_ponudjaci_id` BEFORE INSERT ON `ponude` FOR EACH ROW set  new.ponudjaci_id=new.sifra_ponudjaca;
+            CREATE TRIGGER `unesi_ponudjaci_id_insert` BEFORE INSERT ON `ponude` FOR EACH ROW set  new.ponudjaci_id=new.sifra_ponudjaca;
+        </sql>
+        <sql>
+            CREATE TRIGGER `unesi_ponudjaci_id_update` BEFORE UPDATE ON `ponude` FOR EACH ROW set  new.ponudjaci_id=new.sifra_ponudjaca;
         </sql>
     </changeSet>
 </databaseChangeLog>

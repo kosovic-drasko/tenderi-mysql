@@ -13,6 +13,9 @@ export interface IPonude {
   selected?: boolean | null;
   sifraPonudjaca?: number | null;
   ponudjaci?: IPonudjaci | null;
+  createdBy?: string | null;
+  createdDate?: Date | null;
+  lastModifiedBy?: string | null;
 }
 
 export class Ponude implements IPonude {
@@ -26,9 +29,11 @@ export class Ponude implements IPonude {
     public ponudjenaVrijednost?: number,
     public rokIsporuke?: number,
     public jedinicnaCijena?: number | null,
-    public selected?: boolean | null,
     public sifraPonudjaca?: number | null,
-    public ponudjaci?: IPonudjaci | null
+    public ponudjaci?: IPonudjaci | null,
+    public selected?: boolean | null,
+    public createdBy?: string | null,
+    public createdDate?: Date | null
   ) {
     this.selected = this.selected ?? false;
   }

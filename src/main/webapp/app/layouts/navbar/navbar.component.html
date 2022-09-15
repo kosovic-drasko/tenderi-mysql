@@ -20,7 +20,7 @@
     <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="account !== null">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-          <a *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_USER']" class="nav-link" routerLink="/postupci">
+          <a *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_USER', 'ROLE_MANAGER']" class="nav-link" routerLink="/postupci">
             <span>
               <fa-icon icon="th-list"></fa-icon>
               <span>Postupci</span>
@@ -37,7 +37,7 @@
         </li>
         <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
         <li
-          *jhiHasAnyAuthority="'ROLE_ADMIN'"
+          *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_MANAGER']"
           ngbDropdown
           class="nav-item dropdown pointer"
           display="dynamic"

@@ -43,6 +43,9 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     'jedinicna cijena',
     'rok isporuke',
     'selected',
+    // 'kreirao',
+    // 'datum kreiranja',
+    // 'zadnji izmjenio',
     'action',
   ];
   public dataSource = new MatTableDataSource<IPonude>();
@@ -68,15 +71,6 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
   }
-  notifyBrisanje(type: string, message: string, id: string): void {
-    this.notifier?.notify(type, message, id);
-    // this.notifier?.getConfig();
-  }
-
-  public showNotification(type: string, message: string, id: string): void {
-    this.notifier?.notify(type, message, id);
-  }
-
   loadPage(): void {
     this.isLoading = true;
     this.ponudeService.query().subscribe({
@@ -271,9 +265,9 @@ export class PonudeComponent implements AfterViewInit, OnInit {
         this.loadPage();
       }, 500);
     }
-    this.obrisanoSelektovano = true;
+    this.obrisanoSifraPonude = true;
     setTimeout(() => {
-      this.obrisanoSelektovano = false;
+      this.obrisanoSifraPonude = false;
     }, 5000);
   }
 
@@ -292,8 +286,6 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     setTimeout(() => {
       this.obrisanoSelektovano = false;
     }, 5000);
-
-    // this.showNotification('success', 'Obrisano', 'id');
   }
 
   openBrisiSelektovano(contentBrisiSelect: any): any {
