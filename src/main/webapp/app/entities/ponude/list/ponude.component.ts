@@ -42,8 +42,9 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     'sifra ponudjaca',
     'jedinicna cijena',
     'rok isporuke',
+
+    'kreirao',
     'selected',
-    // 'kreirao',
     // 'datum kreiranja',
     // 'zadnji izmjenio',
     'action',

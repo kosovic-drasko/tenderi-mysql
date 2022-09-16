@@ -130,6 +130,22 @@
             <td mat-cell *matCellDef="let element">{{ element.sifraPonudjaca }}</td>
             <td mat-footer-cell *matFooterCellDef></td>
           </ng-container>
+          <ng-container matColumnDef="kreirao">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Kreirao zapis</th>
+            <td mat-cell *matCellDef="let element">{{ element.createdBy }}</td>
+            <td mat-footer-cell *matFooterCellDef></td>
+          </ng-container>
+          <!--          <ng-container matColumnDef="zadnji izmjenio">-->
+          <!--            <th mat-header-cell *matHeaderCellDef mat-sort-header>Zadnji izmjenio</th>-->
+          <!--            <td mat-cell *matCellDef="let element">{{ element.lastModifiedBy }}</td>-->
+          <!--            <td mat-footer-cell *matFooterCellDef></td>-->
+          <!--          </ng-container>-->
+          <!--          <ng-container matColumnDef="datum kreiranja">-->
+          <!--            <th mat-header-cell *matHeaderCellDef mat-sort-header>Datum</th>-->
+          <!--            <td mat-cell *matCellDef="let element">{{ element.lastModifiedDate }}</td>-->
+          <!--            <td mat-footer-cell *matFooterCellDef></td>-->
+          <!--          </ng-container>-->
+
           <ng-container matColumnDef="selected">
             <th mat-header-cell *matHeaderCellDef>
               <button
@@ -147,23 +163,7 @@
             </td>
             <td mat-footer-cell *matFooterCellDef></td>
           </ng-container>
-          <div>
-            <!--           <ng-container matColumnDef="kreirao">-->
-            <!--             <th mat-header-cell *matHeaderCellDef mat-sort-header>Kreirao zapis</th>-->
-            <!--             <td mat-cell *matCellDef="let element">{{ element.createdBy }}</td>-->
-            <!--             <td mat-footer-cell *matFooterCellDef></td>-->
-            <!--           </ng-container>-->
-            <!--           <ng-container matColumnDef="zadnji izmjenio">-->
-            <!--             <th mat-header-cell *matHeaderCellDef mat-sort-header>Zadnji izmjenio</th>-->
-            <!--             <td mat-cell *matCellDef="let element">{{ element.lastModifiedBy }}</td>-->
-            <!--             <td mat-footer-cell *matFooterCellDef></td>-->
-            <!--           </ng-container>-->
-            <!--           <ng-container matColumnDef="datum kreiranja">-->
-            <!--             <th mat-header-cell *matHeaderCellDef mat-sort-header>Datum</th>-->
-            <!--             <td mat-cell *matCellDef="let element">{{ element.lastModifiedDate }}</td>-->
-            <!--             <td mat-footer-cell *matFooterCellDef></td>-->
-            <!--           </ng-container>-->
-          </div>
+
           <div>
             <ng-container matColumnDef="action">
               <th mat-header-cell *matHeaderCellDef></th>
