@@ -15,25 +15,34 @@
           <mat-icon>search</mat-icon>
         </mat-button-toggle>
         <div></div>
-        <mat-button-toggle *jhiHasAnyAuthority="'ROLE_ADMIN'" (click)="add()" matTooltip="Dodaj novu ponudu">Dodaj </mat-button-toggle>
-        <mat-button-toggle *jhiHasAnyAuthority="'ROLE_ADMIN'" matTooltip="Napravi formu za unos Excel" (click)="obrazacExcel()"
+        <mat-button-toggle *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_MANAGER']" (click)="add()" matTooltip="Dodaj novu ponudu"
+          >Dodaj
+        </mat-button-toggle>
+        <mat-button-toggle
+          *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_MANAGER']"
+          matTooltip="Napravi formu za unos Excel"
+          (click)="obrazacExcel()"
           >Napravi Obrazac
         </mat-button-toggle>
-        <mat-button-toggle *jhiHasAnyAuthority="'ROLE_ADMIN'" matTooltip="Nadji Excel fajl" (click)="fileInput.click()">
+        <mat-button-toggle *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_MANAGER']" matTooltip="Nadji Excel fajl" (click)="fileInput.click()">
           Nadji Fajl
         </mat-button-toggle>
-        <mat-button-toggle *jhiHasAnyAuthority="'ROLE_ADMIN'" matTooltip="Unesi Excel fajl" (click)="uploadFile()"
+        <mat-button-toggle *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_MANAGER']" matTooltip="Unesi Excel fajl" (click)="uploadFile()"
           >Dodaj Fajl
         </mat-button-toggle>
         <mat-button-toggle *ngIf="postupak" matTooltip="Ponisti" (click)="ponisti()">Ponisti</mat-button-toggle>
         <mat-button-toggle
-          *jhiHasAnyAuthority="'ROLE_ADMIN'"
+          *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_MANAGER']"
           matTooltip="Ukloni cijelu ponudu"
           (click)="openBrisiPonudu(contentBrisiPoSifriPonude)"
         >
           Ukloni Ponudu
         </mat-button-toggle>
-        <mat-button-toggle *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_USER']" matTooltip=" Excel fajl" (click)="obrazacExcelPostupak()">
+        <mat-button-toggle
+          *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_USER', 'ROLE_MANAGER']"
+          matTooltip=" Excel fajl"
+          (click)="obrazacExcelPostupak()"
+        >
           <img src="../../../../content/images/icons8-microsoft-excel-48.png" alt="" />
         </mat-button-toggle>
       </mat-button-toggle-group>
@@ -130,21 +139,23 @@
             <td mat-cell *matCellDef="let element">{{ element.sifraPonudjaca }}</td>
             <td mat-footer-cell *matFooterCellDef></td>
           </ng-container>
-          <ng-container matColumnDef="kreirao">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header>Kreirao zapis</th>
-            <td mat-cell *matCellDef="let element">{{ element.createdBy }}</td>
-            <td mat-footer-cell *matFooterCellDef></td>
-          </ng-container>
-          <!--          <ng-container matColumnDef="zadnji izmjenio">-->
-          <!--            <th mat-header-cell *matHeaderCellDef mat-sort-header>Zadnji izmjenio</th>-->
-          <!--            <td mat-cell *matCellDef="let element">{{ element.lastModifiedBy }}</td>-->
-          <!--            <td mat-footer-cell *matFooterCellDef></td>-->
-          <!--          </ng-container>-->
-          <!--          <ng-container matColumnDef="datum kreiranja">-->
-          <!--            <th mat-header-cell *matHeaderCellDef mat-sort-header>Datum</th>-->
-          <!--            <td mat-cell *matCellDef="let element">{{ element.lastModifiedDate }}</td>-->
-          <!--            <td mat-footer-cell *matFooterCellDef></td>-->
-          <!--          </ng-container>-->
+          <div *jhiHasAnyAuthority="['ROLE_MANAGER', 'ROLE_ADMIN', 'ROLE_USER']">
+            <ng-container matColumnDef="kreirao">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Kreirao zapis</th>
+              <td mat-cell *matCellDef="let element">{{ element.createdBy }}</td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+            <ng-container matColumnDef="zadnji izmjenio">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Zadnji izmjenio</th>
+              <td mat-cell *matCellDef="let element">{{ element.lastModifiedBy }}</td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+            <ng-container matColumnDef="datum kreiranja">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>Datum izmjene</th>
+              <td mat-cell *matCellDef="let element">{{ element.lastModifiedDate | date }}</td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+          </div>
 
           <ng-container matColumnDef="selected">
             <th mat-header-cell *matHeaderCellDef>
@@ -241,115 +252,3 @@
     </ng-template>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-<div *jhiHasAnyAuthority="'ROLE_MANAGER'" class="table-responsive" id="entitiesM">
-  <table mat-table id="ExampleTableM" matTableExporter [dataSource]="dataSource" matSort matSortStart="desc" #exporter="matTableExporter">
-    <ng-container matColumnDef="sifra postupka">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Sifra Postupka</th>
-      <td mat-cell *matCellDef="let element">{{ element.sifraPostupka }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-    <ng-container matColumnDef="sifraPonude">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Sifra Ponude</th>
-      <td mat-cell *matCellDef="let element">{{ element.sifraPonude }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-
-    <ng-container matColumnDef="brojPartije">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Broj Partije</th>
-      <td mat-cell *matCellDef="let element">{{ element.brojPartije }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-    <ng-container matColumnDef="naziv proizvodjaca">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Proizvodjac</th>
-      <td mat-cell *matCellDef="let element">{{ element.nazivProizvodjaca }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-    <ng-container matColumnDef="ponudjac">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Ponudjac</th>
-      <td mat-cell *matCellDef="let element">{{ element.ponudjaci.nazivPonudjaca }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-    <ng-container matColumnDef="zasticeni naziv">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Zasticeni naziv</th>
-      <td mat-cell *matCellDef="let element">{{ element.zasticeniNaziv }}</td>
-      <td mat-footer-cell *matFooterCellDef>{{ 'Ukupno:' }}</td>
-    </ng-container>
-    <ng-container matColumnDef="jedinicna cijena">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Jedinicna cijena</th>
-      <td mat-cell *matCellDef="let element">{{ element.jedinicnaCijena }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-    <ng-container matColumnDef="ponudjena vrijednost">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Ponudjena cijena</th>
-      <td mat-cell *matCellDef="let element">{{ element.ponudjenaVrijednost }}</td>
-      <td mat-footer-cell *matFooterCellDef>{{ ukupno | number }}</td>
-    </ng-container>
-    <ng-container matColumnDef="rok isporuke">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Rok isporuke</th>
-      <td mat-cell *matCellDef="let element">{{ element.rokIsporuke }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-    <ng-container matColumnDef="sifra ponudjaca">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Sifra Ponudjaca</th>
-      <td mat-cell *matCellDef="let element">{{ element.sifraPonudjaca }}</td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-    <ng-container matColumnDef="selected">
-      <th mat-header-cell *matHeaderCellDef>
-        <button (click)="openBrisiSelektovano(contentBrisiSelect)" type="submit" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
-          <fa-icon icon="times"></fa-icon>
-          <span class="d-none d-md-inline"></span>
-        </button>
-      </th>
-      <td mat-cell *matCellDef="let element">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="updateSelected(element.id)" />
-      </td>
-      <td mat-footer-cell *matFooterCellDef></td>
-    </ng-container>
-    <div>
-      <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef></th>
-        <td mat-cell *matCellDef="let element">
-          <div class="btn-group">
-            <button
-              type="submit"
-              (click)="
-                update(
-                  element.id,
-                  element.sifraPostupka,
-                  element.sifraPonude,
-                  element.brojPartije,
-                  element.sifraPonudjaca,
-                  element.nazivProizvodjaca,
-                  element.zasticeniNaziv,
-                  element.ponudjenaVrijednost,
-                  element.jedinicnaCijena,
-                  element.selected,
-                  element.rokIsporuke
-                )
-              "
-              class="btn btn-primary btn-sm"
-              data-cy="entityEditButton"
-            >
-              <fa-icon icon="pencil-alt"></fa-icon>
-              <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
-            </button>
-
-            <button type="submit" (click)="delete(element)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
-              <fa-icon icon="times"></fa-icon>
-              <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
-            </button>
-          </div>
-        </td>
-        <td mat-footer-cell *matFooterCellDef></td>
-      </ng-container>
-    </div>
-
-    <tr class="heder" mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
-  </table>
-
-  <mat-paginator class="mat-paginator-sticky" [pageSizeOptions]="[20, 30, 50, 100]" showFirstLastButtons></mat-paginator>
-</div>

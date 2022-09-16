@@ -12,6 +12,8 @@ import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { AlertService } from '../../../core/util/alert.service';
 import { NotifierService } from 'angular-notifier';
+import { AccountService } from '../../../core/auth/account.service';
+import { Account } from '../../../core/auth/account.model';
 
 @Component({
   selector: 'jhi-ponude',
@@ -19,6 +21,7 @@ import { NotifierService } from 'angular-notifier';
   styleUrls: ['./ponude.component.scss'],
 })
 export class PonudeComponent implements AfterViewInit, OnInit {
+  currentAccount: Account | null = null;
   alerts: any[];
   ponudjaci?: IPonudjaci[] = [];
   ponudes?: HttpResponse<IPonude[]>;
@@ -44,9 +47,9 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     'rok isporuke',
 
     'kreirao',
+    'datum kreiranja',
+    'zadnji izmjenio',
     'selected',
-    // 'datum kreiranja',
-    // 'zadnji izmjenio',
     'action',
   ];
   public dataSource = new MatTableDataSource<IPonude>();
@@ -62,7 +65,8 @@ export class PonudeComponent implements AfterViewInit, OnInit {
     protected router: Router,
     protected modalService: NgbModal,
     protected alertService: AlertService,
-    protected notifer: NotifierService
+    protected notifer: NotifierService,
+    private accountService: AccountService
   ) {
     this.notifier = notifer;
     this.alerts = [];
@@ -177,12 +181,14 @@ export class PonudeComponent implements AfterViewInit, OnInit {
   }
 
   ngOnInit(): void {
+    this.accountService.identity().subscribe(account => (this.currentAccount = account));
     if (this.postupak !== undefined) {
       this.loadPonudePonudjaci(this.postupak);
       this.loadPageSifra();
     } else {
       this.loadPage();
     }
+    console.log('Nalog je >>>>>>>>', this.currentAccount?.authorities);
   }
 
   delete(ponude: IPonude): void {
