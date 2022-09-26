@@ -35,6 +35,14 @@
             </span>
           </a>
         </li>
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_USER', 'ROLE_MANAGER']" class="nav-link" routerLink="chat">
+            <span>
+              <fa-icon icon="th-list"></fa-icon>
+              <span>Chat</span>
+            </span>
+          </a>
+        </li>
         <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
         <li
           *jhiHasAnyAuthority="['ROLE_ADMIN', 'ROLE_MANAGER']"

@@ -46,7 +46,7 @@
         }
       }
     ],
-    "@typescript-eslint/explicit-function-return-type": ["error", { "allowExpressions": true }],
+    "@typescript-eslint/explicit-function-return-type": ["off", { "allowExpressions": true }],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/member-ordering": [
       "off",
@@ -69,6 +69,9 @@
       }
     ],
     "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/restrict-plus-operands": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
