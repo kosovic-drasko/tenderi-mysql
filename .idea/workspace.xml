@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e0c2aaf-caab-4d20-85bb-5f7253c78ddc" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/Configuration/WebSocketChatConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/WebSocketChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/chat/chat.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/chat/chat.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/chat/chat.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tender/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tender/web/rest/WebSocketChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tender/web/rest/WebSocketChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/chat/chat.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/chat/chat.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/chat/chat.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/chat/chat.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/ponude.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/entities/ponude/ponude.model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,32 +66,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "import_schema_mapping": "<schema-mapping><databases><list><schema-mapping-item><source-data-source-id>427d7808-d6ec-4b83-8300-ae3fc7dd8472</source-data-source-id><source-path>schema/\"tender\"</source-path><target-data-source-id>aad76191-0981-427a-b76d-6fb8a197d43b</target-data-source-id><target-path>schema/\"zltkircd8t6dor11\"</target-path></schema-mapping-item></list></databases></schema-mapping>",
-    "last_opened_file_path": "C:/Users/pc/VisualStudio/app-angular",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "spring.configuration.checksum": "cd2e6cfb8c6e0413df5978939a9dcb25",
-    "ts.external.directory.path": "C:\\Users\\Win\\IdeaProjects\\tenderi-mysql\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;&lt;databases&gt;&lt;list&gt;&lt;schema-mapping-item&gt;&lt;source-data-source-id&gt;427d7808-d6ec-4b83-8300-ae3fc7dd8472&lt;/source-data-source-id&gt;&lt;source-path&gt;schema/\&quot;tender\&quot;&lt;/source-path&gt;&lt;target-data-source-id&gt;aad76191-0981-427a-b76d-6fb8a197d43b&lt;/target-data-source-id&gt;&lt;target-path&gt;schema/\&quot;zltkircd8t6dor11\&quot;&lt;/target-path&gt;&lt;/schema-mapping-item&gt;&lt;/list&gt;&lt;/databases&gt;&lt;/schema-mapping&gt;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/VisualStudio/app-angular&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.tslint&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;cd2e6cfb8c6e0413df5978939a9dcb25&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\pc\\IdeaProjects\\tenderi-mysql\\node_modules\\typescript\\lib&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pc\IdeaProjects\tenderi-mysql\src\main\webapp\i18n\sr" />
@@ -114,7 +108,7 @@
       <recent name="tender.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TenderiApp">
+  <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -132,7 +126,7 @@
       </method>
     </configuration>
     <configuration name="TenderiApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="ACTIVE_PROFILES" value="prod" />
       <module name="tenderi" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="tender.TenderiApp" />
       <method v="2">
@@ -173,6 +167,11 @@
       <workItem from="1663258112325" duration="19049000" />
       <workItem from="1663831330381" duration="1141000" />
       <workItem from="1664167289790" duration="9742000" />
+      <workItem from="1664216845258" duration="775000" />
+      <workItem from="1664220834874" duration="641000" />
+      <workItem from="1664299684424" duration="2103000" />
+      <workItem from="1664304228280" duration="1090000" />
+      <workItem from="1664385055346" duration="2239000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1662362576920</created>
@@ -482,5 +481,9 @@
     <MESSAGE value="init finish" />
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

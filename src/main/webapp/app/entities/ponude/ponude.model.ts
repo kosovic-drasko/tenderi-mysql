@@ -33,7 +33,8 @@ export class Ponude implements IPonude {
     public ponudjaci?: IPonudjaci | null,
     public selected?: boolean | null,
     public createdBy?: string | null,
-    public createdDate?: Date | null
+    public createdDate?: Date | null,
+    public lastModifiedBy?: string | null
   ) {
     this.selected = this.selected ?? false;
   }

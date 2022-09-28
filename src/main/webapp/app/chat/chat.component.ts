@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Stomp } from '@stomp/stompjs';
 import SockJS from 'sockjs-client';
+import { HttpClient } from '@angular/common/http';
+import { ApplicationConfigService } from '../core/config/application-config.service';
 
 @Component({
   selector: 'jhi-chat',
@@ -13,13 +15,15 @@ export class ChatComponent implements OnInit {
   greetings: string[] = [];
   disabled = true;
   newmessage?: string;
-  private stompClient?: any;
+  private stompClient = null;
+  protected resourceUrl = this.applicationConfigService.getEndpointFor('testchat');
+  constructor(protected http: HttpClient, protected applicationConfigService: ApplicationConfigService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.connect();
   }
 
-  setConnected(connected: boolean): void {
+  setConnected(connected: boolean) {
     this.disabled = !connected;
 
     if (connected) {
@@ -27,17 +31,17 @@ export class ChatComponent implements OnInit {
     }
   }
 
-  connect(): void {
-    const socket = new SockJS('http://localhost:9000/testchat');
-
-    this.stompClient = Stomp.over(socket);
+  connect() {
+    const socket = new SockJS(this.resourceUrl);
+    this.stompClient === Stomp.over(socket);
 
     const _this = this;
-
-    this.stompClient.connect({}, function (frame: string) {
+    // @ts-ignore
+    this.stompClient?.connect({}, function (frame: string) {
       console.log('Connected: ' + frame);
 
-      _this.stompClient.subscribe('/start/initial', function (hello: { body: string }) {
+      // @ts-ignore
+      _this.stompClient?.subscribe('/start/initial', function (hello: { body: string }) {
         console.log(JSON.parse(hello.body));
 
         _this.showMessage(JSON.parse(hello.body));
@@ -46,6 +50,7 @@ export class ChatComponent implements OnInit {
   }
 
   sendMessage() {
+    // @ts-ignore
     this.stompClient?.send('/current/resume', {}, JSON.stringify(this.newmessage));
     this.newmessage = '';
   }

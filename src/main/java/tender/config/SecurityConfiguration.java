@@ -62,6 +62,8 @@ public class SecurityConfiguration {
                 .antMatchers("/api/ponude/file")
                 .antMatchers("/api/ponude/file/**")
                 .antMatchers("/api/specifikacije/file/**")
+                .antMatchers("/api/testchat/**")
+                .antMatchers("/testchat/**")
                 .antMatchers("/api/uploadfiles/specifikacije")
                 .antMatchers("/api/set")
                 .antMatchers("/api/upload")

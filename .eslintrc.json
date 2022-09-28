@@ -70,6 +70,7 @@
     ],
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/restrict-plus-operands": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
